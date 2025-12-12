@@ -1,0 +1,272 @@
+/* === BASE === */
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  margin: 0;
+  background-color: #f9fbfc;
+  color: #111;
+  text-align: center;
+}
+
+section {
+  padding: 60px 20px;
+}
+
+.intro {
+  font-size: 1rem;
+  color: #007aff;
+  font-weight: 500;
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+
+/* === TYPOGRAPHIE === */
+h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #0a2540;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #0a2540;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.4rem;
+  color: #007aff;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #3a4e63;
+  line-height: 1.6;
+}
+
+/* === HERO === */
+.hero {
+  padding: 100px 20px;
+  background: linear-gradient(145deg, #d6eaff, #f0f8ff);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+  width: 200px;
+  max-width: 90%;
+  margin: 0 auto 30px auto;
+  display: block;
+  filter: drop-shadow(0 0 8px rgba(0, 122, 255, 0.3));
+}
+
+.hero p {
+  font-size: 1.3rem;
+  color: #3a4e63;
+  opacity: 0.9;
+  margin-bottom: 30px;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.6);
+}
+
+/* === BOUTONS === */
+.scroll-button {
+  display: inline-block;
+  background-color: #007aff;
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.scroll-button:hover {
+  background-color: #005fcc;
+}
+
+/* === SECTIONS BLEUES === */
+.concept,
+.liberte,
+.steps,
+.packs {
+  background: linear-gradient(145deg, #d6eaff, #f0f8ff);
+}
+
+/* === ÉTAPES === */
+.step-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.step {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  width: 180px;
+}
+
+/* === PACKS === */
+.pack-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.pack {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  padding: 24px;
+  width: 220px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  position: relative;
+}
+
+.pack:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.price {
+  font-size: 1.1rem;
+  color: #0a2540;
+  margin-bottom: 10px;
+}
+
+.details {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+
+.pack.active .details {
+  max-height: 100px;
+  opacity: 1;
+}
+
+/* === CTA === */
+.cta {
+  background: linear-gradient(145deg, #d6eaff, #f0f8ff);
+  padding: 60px 20px;
+  border-top: 4px solid #007aff;
+  border-radius: 12px;
+}
+
+.cta h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #007aff;
+}
+
+.cta p {
+  font-size: 1rem;
+  color: #3a4e63;
+}
+
+/* === FORMULAIRE === */
+#inscription {
+  background: linear-gradient(145deg, #d6eaff, #f0f8ff);
+  padding: 30px 20px;
+  margin-top: 60px;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+#inscription input,
+#inscription select {
+  display: block;
+  width: 80%;
+  margin: 0.5rem auto;
+  padding: 0.8rem;
+  border: 1px solid #007aff;
+  border-radius: 6px;
+}
+
+#inscription button {
+  margin-top: 1rem;
+  padding: 0.8rem 1.2rem;
+  background-color: #007aff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#inscription button:hover {
+  background-color: #005fcc;
+}
+
+#feedback {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+input, select {
+  scroll-margin-top: 150px;
+}
+
+/* === FOOTER MODERNE, MINIMALISTE, APPLE-LIKE === */
+.footer {
+  background: linear-gradient(145deg, #d6eaff, #f0f8ff);
+  padding: 30px 20px;
+  margin-top: 60px;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #3a4e63;
+  letter-spacing: 0.3px;
+}
+
+.footer a {
+  color: #007aff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer a:hover {
+  opacity: 0.7;
+}
+
+/* === Suppression de la barre bleu foncé résiduelle === */
+.cta,
+#inscription,
+footer {
+  background-color: transparent !important;
+  background-image: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Section d'accueil en plein écran */
+.hero {
+  min-height: 100vh; /* prend toute la hauteur de l'écran */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Pour mobile */
+@media (max-width: 768px) {
+  .hero {
+    padding: 30px 20px;
+  }
+}
