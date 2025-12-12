@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mozaic – Pilote</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- 🟦 HERO -->
+<div class="hero">
+  <img src="https://i.postimg.cc/jwr6348b/logo-mozaic.png" alt="Logo Mozaic" class="logo fade-in-up">
+  <h1 class="fade-in-up delay-1">Mozaic</h1>
+  <p class="fade-in-up delay-2">Le multisport flexible, enfin accessible.</p>
+  <a href="#packs" class="scroll-button fade-in-up delay-2">Découvrir les packs →</a>
+</div>
+
+<!-- 🧘‍♂️ CONCEPT -->
+<section class="concept">
+  <p class="intro">Mozaic, c’est la liberté de faire du sport sans contrainte.</p>
+  <h2>Un abonnement. Des dizaines d’activités.</h2>
+  <p>Yoga, escalade, natation, fitness… Choisissez chaque semaine selon vos envies.</p>
+</section>
+
+<!-- 🆓 LIBERTÉ -->
+<section class="liberte">
+  <p class="intro">Fini les réservations et les annulations.</p>
+  <h2>Sans réservation. Sans contrainte.</h2>
+  <p>Avec Mozaic, vous êtes libre d’aller faire du sport quand vous le souhaitez.<br>
+  Il vous suffit de scanner à l’entrée de l’activité partenaire.</p>
+</section>
+
+<!-- 🧭 ÉTAPES -->
+<section class="steps">
+  <p class="intro">Voici comment ça marche.</p>
+  <h2>En 3 étapes simples</h2>
+  <div class="step-list">
+    <div class="step">
+      <h3>1</h3>
+      <p>Choisissez votre pack</p>
+    </div>
+    <div class="step">
+      <h3>2</h3>
+      <p>Présentez-vous à l’activité</p>
+    </div>
+    <div class="step">
+      <h3>3</h3>
+      <p>Scannez à l’entrée et profitez</p>
+    </div>
+  </div>
+</section>
+
+<!-- 📦 PACKS -->
+<section class="packs" id="packs">
+  <p class="intro">Des formules simples, pensées pour vous.</p>
+  <h2>Nos 3 packs</h2>
+  <div class="pack-list">
+    <div class="pack" onclick="toggleDetails(this)">
+      <h3>Essentiel</h3>
+      <p class="price">4 entrées / mois — <strong>29 €</strong></p>
+      <div class="details">
+        <p>4 activités par mois, idéal pour découvrir.</p>
+      </div>
+    </div>
+
+    <div class="pack" onclick="toggleDetails(this)">
+      <h3>Équilibre</h3>
+      <p class="price">8 entrées / mois — <strong>49 €</strong></p>
+      <div class="details">
+        <p>8 activités par mois, pour varier régulièrement.</p>
+      </div>
+    </div>
+
+    <div class="pack" onclick="toggleDetails(this)">
+      <h3>Vitalité</h3>
+      <p class="price">12 entrées / mois — <strong>69 €</strong></p>
+      <div class="details">
+        <p>Pour les actifs multisport, jusqu’à 12 séances par mois.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 🚀 CTA -->
+<section class="cta">
+  <p class="intro">Prêt à rejoindre l’aventure ?</p>
+  <h2>Mozaic vous attend</h2>
+  <p>Contact : hello@mozaic.fr</p>
+</section>
+
+<!-- ✅ FORMULAIRE -->
+<section id="inscription">
+  <h2>Inscrivez-vous au pilote Mozaic</h2>
+
+  <form name="inscription" netlify>
+  <input id="nom" name="nom" placeholder="Nom" required>
+  <input id="email" name="email" placeholder="Email" type="email" required>
+
+  <select id="pack" name="pack" required>
+    <option value="">Choisissez un pack</option>
+    <option value="29">Pack Découverte – 29€</option>
+    <option value="49">Pack Explorer – 49€</option>
+    <option value="69">Pack Passion – 69€</option>
+  </select>
+
+  <button type="submit">Je m’inscris</button>
+</form>
+
+  <p id="feedback"></p>
+</section>
+
+<!-- ✅ FOOTER MODERNE, APPLE-LIKE -->
+<footer class="footer">
+  <p>© 2025 Mozaic — Projet pilote • <a href="mailto:hello@mozaic.fr">hello@mozaic.fr</a></p>
+</footer>
+
+<script>
+  function toggleDetails(el) {
+    el.classList.toggle('active');
+  }
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
